@@ -52,6 +52,12 @@
         android:layout_height="wrap_content"
         android:text="@string/button_show" />
 
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close" />
+
     <CheckBox
         android:id="@+id/display_on_top"
         android:layout_width="match_parent"

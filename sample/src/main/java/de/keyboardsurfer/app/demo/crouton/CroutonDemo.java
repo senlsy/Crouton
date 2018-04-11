@@ -23,8 +23,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
-import de.keyboardsurfer.android.widget.crouton.Crouton;
-
 
 public class CroutonDemo extends FragmentActivity {
 
@@ -33,7 +31,6 @@ public class CroutonDemo extends FragmentActivity {
     enum PageInfo {
 
         Crouton(R.string.crouton), About(R.string.about);
-
         int titleResId;
 
         PageInfo(int titleResId) {
@@ -49,11 +46,6 @@ public class CroutonDemo extends FragmentActivity {
         croutonPager.setAdapter(new CroutonPagerAdapter(getSupportFragmentManager()));
     }
 
-    @Override
-    protected void onDestroy() {
-        Crouton.clearCroutonsForActivity(this);
-        super.onDestroy();
-    }
 
     class CroutonPagerAdapter extends FragmentPagerAdapter {
 

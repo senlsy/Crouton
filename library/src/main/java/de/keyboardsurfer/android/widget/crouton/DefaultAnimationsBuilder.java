@@ -22,6 +22,7 @@ import android.view.animation.TranslateAnimation;
 
 /** Builds the default animations for showing and hiding a {@link Crouton}. */
 final class DefaultAnimationsBuilder {
+
   private static final long DURATION = 400;
   private static Animation slideInDownAnimation, slideOutUpAnimation;
   private static int lastInAnimationHeight, lastOutAnimationHeight;

@@ -1,19 +1,3 @@
-/*
- * Copyright 2012 - 2014 Benjamin Weiss
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package de.keyboardsurfer.android.widget.crouton;
 
 import android.graphics.drawable.Drawable;
@@ -190,7 +174,9 @@ public class Style {
      */
     final int fontNameResId;
 
+
     private Style(final Builder builder) {
+
         this.configuration = builder.configuration;
         this.backgroundColorResourceId = builder.backgroundColorResourceId;
         this.backgroundDrawableResourceId = builder.backgroundDrawableResourceId;
@@ -222,6 +208,7 @@ public class Style {
      * Builder for the {@link Style} object.
      */
     public static class Builder {
+
         private Configuration configuration;
         private int backgroundColorValue;
         private int backgroundColorResourceId;
@@ -252,6 +239,7 @@ public class Style {
          * Creates a {@link Builder} to build a {@link Style} upon.
          */
         public Builder() {
+
             configuration = Configuration.DEFAULT;
             paddingInPixels = 10;
             backgroundColorResourceId = android.R.color.holo_blue_light;
@@ -276,6 +264,7 @@ public class Style {
          * @param baseStyle The base {@link Style} to use for this {@link Style}.
          */
         public Builder(final Style baseStyle) {
+
             configuration = baseStyle.configuration;
             backgroundColorValue = baseStyle.backgroundColorValue;
             backgroundColorResourceId = baseStyle.backgroundColorResourceId;
