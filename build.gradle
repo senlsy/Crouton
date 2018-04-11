@@ -14,28 +14,20 @@
  * limitations under the License.
  */
 
-subprojects {
-version = '1.8.5'
-
-  buildscript {
+buildscript {
     repositories {
-      mavenCentral()
-      mavenLocal()
+        jcenter()
+        mavenCentral()
     }
-
     dependencies {
-      classpath 'com.android.tools.build:gradle:1.0.0'
-      classpath 'com.github.dcendents:android-maven-plugin:1.2'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
-  }
-
-  repositories {
-    mavenCentral()
-    mavenLocal()
-  }
 }
 
-task wrapper(type: Wrapper) {
-  description 'Generates the gradle wrapper'
-  gradleVersion = '2.2.1'
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
+    }
 }

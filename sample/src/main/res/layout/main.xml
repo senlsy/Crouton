@@ -16,21 +16,15 @@
   ~ limitations under the License.
   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/de.keyboardsurfer.app.demo.crouton"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical">
-
-  <com.viewpagerindicator.TitlePageIndicator
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    android:id="@+id/titles"
-    app:footerIndicatorStyle="triangle"
-    android:background="@color/abs__background_holo_dark" />
-
-  <android.support.v4.view.ViewPager
+    xmlns:app="http://schemas.android.com/apk/de.keyboardsurfer.app.demo.crouton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/crouton_pager" />
+    android:orientation="vertical">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/crouton_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

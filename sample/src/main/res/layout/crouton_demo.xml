@@ -17,52 +17,52 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="match_parent"
-  android:layout_height="wrap_content"
-  android:layout_centerInParent="true"
-  android:layout_gravity="center"
-  android:orientation="vertical"
-  android:padding="@dimen/padding_default"
-  android:id="@+id/crouton_layout">
-
-  <Spinner
-    android:id="@+id/spinner_style"
+    android:id="@+id/crouton_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:entries="@array/style" />
-
-  <EditText
-    android:id="@+id/edit_text_text"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="@string/hint_text"
-    android:singleLine="true" />
-
-  <EditText
-    android:id="@+id/edit_text_duration"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="@string/hint_duration"
-    android:inputType="number"
-    android:singleLine="true" />
-
-  <Button
-    android:id="@+id/button_show"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/button_show" />
-
-  <CheckBox
-    android:id="@+id/display_on_top"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/display_on_top"
-    android:checked="true" />
-
-  <LinearLayout
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
     android:orientation="vertical"
-    android:id="@+id/alternate_view_group"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:padding="@dimen/padding_default">
+
+    <Spinner
+        android:id="@+id/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/style" />
+
+    <EditText
+        android:id="@+id/edit_text_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_text"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edit_text_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_duration"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/button_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_show" />
+
+    <CheckBox
+        android:id="@+id/display_on_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/display_on_top" />
+
+    <LinearLayout
+        android:id="@+id/alternate_view_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
 
 </LinearLayout>

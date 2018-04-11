@@ -18,34 +18,38 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:ignore="Overdraw"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical"
     android:background="#ff33b5e5"
-    android:padding="10dp">
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:ignore="Overdraw">
 
-  <ImageView android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:src="@drawable/ic_launcher"
-      android:contentDescription="@string/crouton" />
-
-  <LinearLayout android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:layout_marginLeft="5dp"
-      android:orientation="vertical">
-
-    <TextView android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:text="@string/custom_title" />
+        android:contentDescription="@string/crouton"
+        android:src="@drawable/ic_launcher" />
 
-    <TextView android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:text="@string/custom_message" />
-  </LinearLayout>
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_title"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_message"
+            android:textColor="#fff" />
+    </LinearLayout>
 </LinearLayout>
